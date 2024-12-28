@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ray Cornelius </title>
+
+  <!-- Docsify Themeable CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/themeable.min.css">  
+  <link rel="stylesheet" href="docs/css/style.css">
+  <!-- Add your custom styles here (optional) -->
+  <style>
+    /* Example: Customize header color */
+    .sidebar { background-color: #1a1a1a; }
+  </style>
+</head>
+<body>
+
+  <!-- Docsify will inject content here -->
+  <div id="app"></div>
+
+  <!-- Docsify Scripts -->
+  <script>
+    window.$docsify = {
+      name: 'Ray Cornelius',          // Title of your site
+      repo: 'https://raycornelius.github.io', // Add your repo link
+
+      // Themeable Configuration
+      themeable: {
+        readyTransition: true,         // Add a fade-in effect
+        responsiveTables: true,        // Enable responsive tables
+      },
+
+      // Sidebar configuration
+      loadSidebar: true,               // Enable sidebar
+      subMaxLevel: 2,                  // Display up to level 2 headings in the sidebar
+
+      // Navbar configuration
+      loadNavbar: true,                // Enable navbar
+
+      // Search plugin configuration
+      search: {
+        maxAge: 86400000,              // Cache search results for 1 day
+        paths: 'auto',                 // Search all paths by default
+        placeholder: 'Knowledge is power', // Placeholder text for search box
+      },
+
+      // Pagination plugin configuration
+      pagination: {
+        previousText: 'Go Back',      // Text for the "previous" button
+        nextText: 'Go Forward',              // Text for the "next" button
+        crossChapter: true,            // Allow pagination between chapters
+      },
+
+      // Other configurations
+      coverpage: true,                 // Use a cover page (README.md will act as the cover page)
+      notFoundPage: true,              // Display a custom 404 page if not found
+      auto2top: true,                  // Scroll to top when navigating to a new page
+      mergeNavbar: true,               // Merge the navbar and sidebar
+      routerMode: 'history',           // Use history mode for clean URLs
+      executeScript: true,             // Enable running custom scripts
+      formatUpdated: '{YYYY-MM-DD}',   // Format for last updated timestamp
+    };
+  </script>
+
+  <!-- Docsify core script -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <!-- Docsify Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+</body>
+</html>
